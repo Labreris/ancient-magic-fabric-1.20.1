@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ancient-magic",
+	"version": "${version}",
+	"name": "Ancient Magic",
+	"description": "Discover and study the ancient schools of magic.",
+	"authors": [
+		"Libraries"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ancient-magic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"libraris.ancientmagic.AncientMagic"
+		],
+		"client": [
+			"libraris.ancientmagic.AncientMagicClient"
+		],
+		"fabric-datagen": [
+			"libraris.ancientmagic.AncientMagicDataGenerator"
+		]
+	},
+	"mixins": [
+		"ancient-magic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
